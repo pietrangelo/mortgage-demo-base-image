@@ -15,7 +15,7 @@ LABEL io.k8s.description="Entando base image for the mortgage demo" \
 
 # TODO: Install required packages here: and create the directory where the project will run
 # /opt/entando, Make the user 1001 owner of this directory
-RUN apt-get update && apt-get install --no-install-recommends -y maven imagemagick git acl \
+RUN apt-get update && apt-get install --no-install-recommends -y maven imagemagick git \
 &&  apt-get autoclean -y \
 && mkdir -p /opt/entando && mkdir -p /opt/entando/.m2/repository && chown -R 1001:1001 /opt/entando && chmod 0777 -R /opt/entando
 
