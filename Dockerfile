@@ -1,5 +1,9 @@
+FROM openjdk:8-slim
+
+LABEL maintainer="Pietrangelo Masala <p.masala@entando.com>"
+
 # TODO: Rename the builder environment variable to inform users about application you provide them
-ENV MORTGAGE_DEMO=1.0
+ENV ENTANDO_BASE_IMAGE_MORTGAGE_DEMO=1.0
 ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ENV JRE_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 ENV MAVEN_HOME=/usr/share/maven
